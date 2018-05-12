@@ -13,7 +13,7 @@ public class Main {
         Garage garage = new Garage();
         Garage newGarage = new Garage();
 
-        System.out.println("check GitHub work");
+        System.out.println("check GitHub work???");
 
         String[] cars = {"Fiat", "Peugeot", "Ford", "Toyota", "Nissan", "Opel", "Saab"};
         String[] colors = {"Red", "Orange", "Yellow", "Green", "Blue", "Navy", "Violet"};
