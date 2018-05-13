@@ -4,9 +4,9 @@ import java.io.Serializable;
 
 public class Car implements Serializable {
 
-    private int number;
-    private String model;
-    private String color;
+    final int number;
+    final String model;
+    final String color;
 
     public Car(int number, String model, String color) {
         this.number = number;

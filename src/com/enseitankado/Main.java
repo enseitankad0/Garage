@@ -13,8 +13,6 @@ public class Main {
         Garage garage = new Garage();
         Garage newGarage = new Garage();
 
-        System.out.println("check GitHub work???");
-
         String[] cars = {"Fiat", "Peugeot", "Ford", "Toyota", "Nissan", "Opel", "Saab"};
         String[] colors = {"Red", "Orange", "Yellow", "Green", "Blue", "Navy", "Violet"};
         int randomNumber;
@@ -95,21 +93,27 @@ public class Main {
         }
 
     }
+
+    public static void exportToTxt() {
+
+    }
+
+
 }
 
 /*
 *
-* 1. Wszędzie gdzie masz komentarze w stylu: // 1. WRITE TO DAT FILE powinna być nowa metoda.
-2. Po co robisz coś takiego: Integer k = Integer.valueOf(i);? zobacz jakim typem jest i
-3. Po co klasa Garage implementuje interfejs Map? Przez to niepotrzebnie masz takie kwiatki jak metoda entrySet która zwraca nulla.
+*       1. Wszędzie gdzie masz komentarze w stylu: // 1. WRITE TO DAT FILE powinna być nowa metoda.
+        2. Po co robisz coś takiego: Integer k = Integer.valueOf(i);? zobacz jakim typem jest i
+3.      Po co klasa Garage implementuje interfejs Map? Przez to niepotrzebnie masz takie kwiatki jak metoda entrySet która zwraca nulla.
 
-4. Formatowanie kodu!! Puste linie, wcięcia itp...
-5. Taki catch niewiele daje: catch(IOException io) {System.out.println("IO Exception" + io.getMessage());}
+4.      Formatowanie kodu!! Puste linie, wcięcia itp...
+5.      Taki catch niewiele daje: catch(IOException io) {System.out.println("IO Exception" + io.getMessage());}
 
-1. zamiast zapisu do takiego pliku txt mógłbyś pomyśleć o csv
-2. zmienne w Car mogą być final
-3. klasa Garage według mnie jakaś taka bez sensu - część operacji implementujących interfejs map działa poprawnie, część niepoprawnie, zastanowiłbym się czy rzeczywiście warto implementować mapę
-4. Ta metoda printGarage po pierwsze nie printuje, po drugie zwraca reprezentacje tekstową pierwszego samochodu lub nulla - zła jest albo nazwa funkcji albo implementacja, a w ogóle wywaliłbym tą metodę z tej klasy i zrobił nową odpowiedzialną za to
+1.      zamiast zapisu do takiego pliku txt mógłbyś pomyśleć o csv
+2.      zmienne w Car mogą być final
+3.      klasa Garage według mnie jakaś taka bez sensu - część operacji implementujących interfejs map działa poprawnie, część niepoprawnie, zastanowiłbym się czy rzeczywiście warto implementować mapę
+4.      Ta metoda printGarage po pierwsze nie printuje, po drugie zwraca reprezentacje tekstową pierwszego samochodu lub nulla - zła jest albo nazwa funkcji albo implementacja, a w ogóle wywaliłbym tą metodę z tej klasy i zrobił nową odpowiedzialną za to
 5. cała logika w mainie - konkretne funkcje do wydzielenia do innych metod, a najlepiej klas
 6. jak już używasz serializacji, to może lepiej serializować cały garaż a nie każdy samochód osobno
 7. staroświecki język, java 8 wyszła kilka lat temu ( ͡° ͜ʖ ͡°)*/
