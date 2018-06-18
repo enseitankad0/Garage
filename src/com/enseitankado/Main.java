@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
 
 //        The purpose of this program is to generate a number of random cars and to store them in the data structure.
-//        Then the data is saved to the format .dat and .txt and then read by the program.
+//        Then the data is saved to the format .dat and .txt and then read by the program. It's only a exercise. 
 
         Garage garage = new Garage();
         Garage newGarage = new Garage();
